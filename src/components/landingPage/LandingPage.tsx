@@ -1,14 +1,17 @@
-import Header from "../header/Header"
+import Header from "../header/Header";
+import styles from './LandingPage.module.css';
 
-function LandingPage(){
-return(
+function LandingPage() {
+  return (
     <div>
-    
-    <Header/>
-    <h1>hola</h1>
-
+      <Header />
+      <div className={styles.container}>
+        <div className={styles.text}>
+          <h1>Hi, I'm Nicolas! </h1>
+        </div>
+      </div>
     </div>
-)
-} 
+  );
+}
 
-export default LandingPage
+export default LandingPage;
